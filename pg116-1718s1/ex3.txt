@@ -1,0 +1,41 @@
+Répondre aux questions ci-dessous directement dans ce fichier, dans
+les zones de réponse indiquées pour chaque question par les balises
+%debut et %fin en remplacant le texte ...Répondre ici... par votre
+réponse.
+
+MERCI DE NE PAS MODIFIER LE TEXTE EN-DEHORS DES ZONES ENTRE DEUX
+BALISES DE REPONSE %debut ET %fin.
+
+
+
+Cet exercice a pour but de factoriser le code commun aux fonctions
+dequeue__pop_front et dequeue__pop_back.
+
+1- Identifier les parties de la fonction dequeue__pop_front qu'il faut
+modifier pour écrire dequeue__pop_back
+
+%debut
+... Répondre ici...
+%fin
+
+2- On propose d'écrire une fonction dequeue__pop qui sera paramétrée
+par les éléments qui diffèrent entre dequeue__pop_front et
+dequeue__pop_back. Donner le prototype de la fonction dequeue__pop,
+ainsi que le code de dequeue__pop_front et de dequeue__pop_back. NOTA
+BENE: on ne demande pas d'écrire le code de la fonction dequeue__pop
+qui doit avoir exactement la même structure que la fonction
+dequeue__pop_front de l'énoncé.
+   
+%debut
+int dequeue__pop(...Répondre ici...);
+
+int dequeue__pop_front(struct dequeue * dequeue)
+{
+  return dequeue__pop(...Répondre ici...);
+}
+
+int dequeue__pop_back(struct dequeue * dequeue)
+{
+  return dequeue__pop(...Répondre ici...);
+}
+%fin

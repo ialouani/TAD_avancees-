@@ -1,0 +1,21 @@
+Répondre aux questions ci-dessous directement dans ce fichier, dans
+les zones de réponse indiquées pour chaque question par les balises
+%debut et %fin en remplacant le texte ...Répondre ici... par votre
+réponse.
+
+MERCI DE NE PAS MODIFIER LE TEXTE EN-DEHORS DES ZONES ENTRE DEUX
+BALISES DE REPONSE %debut ET %fin.
+
+1- Quel doit être le nouveau type des champs "a" et "first" de struct
+array?
+
+%debut
+... Répondre ici...
+%fin
+
+2- Quelles fonctions doivent être stockées dans struct array pour
+paramétrer sont comportement? Donner leurs prorotypes.
+
+%debut
+... Répondre ici...
+%fin
