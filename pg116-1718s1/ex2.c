@@ -88,8 +88,9 @@ void dequeue__free(struct dequeue * dequeue){
       tmp=llm__next(head);
       free(rry);//le fond d'abord (ce sont justedes remarques pour les lecteurs pour faciliter la comprehension).
       free(head);
+      
       head=tmp;
-      if(head!=NULL) rry=head->array;
+      if(head!=NULL) rry=tmp->array;
     }
     free(dequeue->l);
     free(dequeue);
@@ -150,7 +151,12 @@ int dequeue__push_front(struct dequeue * dequeue, int x){
     //soit le contraire..(donc on reappliquera cette derniere suivant certaines
     //MISESa jour.///)
     struct lelement* head=lnk__first(dequeue->l);
-    if(head->array->a[0]>0){
+    //int FIRST=array__front(head->array);(pour apprendre que
+    //int FIRST=&(retour_fonctionnel) non car histoire de variable locale
+    //par ss effet de bord, les nouveaux compilateurs le signalement implicitement sans warning.
+    if(array__size(head->array)>=(CAPACITY/2)+1){
+      //>= pour considerer les tests unitaires qui peuvent reassembler notre
+      //logique de telle facon a faire des push_backk au niveau des arrays alloues.
       struct lelement* head1=(struct lelement*)malloc(sizeof(struct lelement));
       head1->array=(struct array*)malloc(sizeof(struct array));
       array__empty(head1->array);

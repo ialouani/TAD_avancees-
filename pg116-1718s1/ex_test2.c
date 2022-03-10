@@ -64,7 +64,7 @@ static void test_API_doublequeue__ATall(){
   display(empty_double_queue->l->head->array);
   display(empty_double_queue->l->head->next->array);
   display(empty_double_queue->l->head->next->next->array);
-  free(empty_double_queue);
+  dequeue__free(empty_double_queue);
 }
 
 
